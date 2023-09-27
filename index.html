@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="head"><span>Calculator</span></div>
+        <input type="text" class="screen" />
+        <div class="btnContainer">
+          <div class="leftBtns">
+            <div class="row1">
+              <button
+                style="background-color: red"
+                id="ac"
+                onclick="allClear()"
+              >
+                Ac
+              </button>
+              <button
+                style="background-color: #62b1ee"
+                class="btn"
+                value="/"
+                onclick="getBtnText(this)"
+              >
+                /
+              </button>
+              <button
+                style="background-color: #62b1ee"
+                class="btn"
+                value="*"
+                onclick="getBtnText(this)"
+              >
+                *
+              </button>
+            </div>
+            <div class="row2">
+              <button class="btn" value="1" onclick="getBtnText(this)">
+                1
+              </button>
+              <button class="btn" value="2" onclick="getBtnText(this)">
+                2
+              </button>
+              <button class="btn" value="3" onclick="getBtnText(this)">
+                3
+              </button>
+            </div>
+            <div class="row3">
+              <button class="btn" value="4" onclick="getBtnText(this)">
+                4
+              </button>
+              <button class="btn" value="5" onclick="getBtnText(this)">
+                5
+              </button>
+              <button class="btn" value="6" onclick="getBtnText(this)">
+                6
+              </button>
+            </div>
+            <div class="row4">
+              <button class="btn" value="7" onclick="getBtnText(this)">
+                7
+              </button>
+              <button class="btn" value="8" onclick="getBtnText(this)">
+                8
+              </button>
+              <button class="btn" value="9" onclick="getBtnText(this)">
+                9
+              </button>
+            </div>
+
+            <div class="row5">
+              <button
+                style="background-color: #00ff08"
+                class="btn"
+                value="."
+                onclick="BackBtn()"
+              >
+                <i
+                  class="fa-solid fa-delete-left"
+                  style="color: rgb(0, 0, 0)"
+                ></i>
+              </button>
+              <button class="btn" value="0" onclick="getBtnText(this)">
+                0
+              </button>
+              <button class="btn" value="." onclick="getBtnText(this)">
+                .
+              </button>
+            </div>
+          </div>
+          <div class="rightBtns">
+            <button
+              style="background-color: #62b1ee"
+              class="btn"
+              value="-"
+              onclick="getBtnText(this)"
+            >
+              -
+            </button>
+            <button
+              style="background-color: #62b1ee"
+              class="btn plus"
+              value="+"
+              onclick="getBtnText(this)"
+            >
+              +
+            </button>
+            <button
+              style="background-color: #62b1ee"
+              class="btn equal"
+              value="="
+              onclick="evaluateme()"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4639419774.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
